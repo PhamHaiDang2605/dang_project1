@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+</head>
+<body>
+    <h1>Chào mừng đến với Trang Chủ!</h1>
+    <ul>
+        {% if user.is_authenticated %}
+            <p>Chào, {{ user.username }}! <a href="{% url 'logout' %}">Đăng xuất</a></p>
+        {% else %}
+            <a href="{% url 'login' %}">Đăng nhập</a> | <a href="{% url 'register' %}">Đăng ký</a>
+        {% endif %}
+        <li><a href="/books/">Danh sách sách</a></li>
+        <li><a href="/cart/">Giỏ hàng</a></li>
+    </ul>
+</body>
+</html>

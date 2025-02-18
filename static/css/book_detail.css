@@ -1,0 +1,54 @@
+/* background màu xanh dương nhạt cho toàn bộ trang */
+body {
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+    color: #01579b;
+}
+
+/* Tiêu đề trang book detail */
+h2 {
+    color: #01579b;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Các thông tin về sách */
+.book-details {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #01579b;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.book-details p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Chi tiết ảnh sách */
+.book-image {
+    text-align: center;
+}
+
+.book-image img {
+    max-width: 80%;
+    height: auto;
+    border: 5px solid #01579b;
+    border-radius: 8px;
+}
+
+/* Nút quay lại danh sách sách */
+a {
+    display: inline-block;
+    background-color: #01579b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: #0288d1;
+}

@@ -1,0 +1,58 @@
+
+         /* Đặt màu nền cho trang */
+         body {
+            background-color: #f0f8ff; /* Màu xanh dương nhạt */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1e90ff; /* Màu xanh dương đậm */
+            padding: 20px 0;
+        }
+
+        /* Chỉnh lại bảng */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd; /* Màu xám nhạt cho viền */
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #87cefa; /* Màu xanh dương nhạt cho tiêu đề bảng */
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e0f7fa; /* Màu nền nhạt cho các hàng chẵn */
+        }
+
+        tr:hover {
+            background-color: #d1e7fd; /* Màu nền khi di chuột qua các hàng */
+        }
+
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .no-image {
+            color: #888;
+            font-style: italic;
+        }
+        a {
+            display: inline-block;
+            background-color: #01579b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách khách hàng</title>
+</head>
+<body>
+    <h1>Danh sách khách hàng</h1>
+    <ul>
+        {% for customer in customers %}
+            <li>{{ customer.full_name }} - {{ customer.email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

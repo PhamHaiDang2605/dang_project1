@@ -1,0 +1,28 @@
+<!-- book/templates/book/book_detail.html -->
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sách</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/book_detail.css' %}">
+</head>
+<body>
+    <h2>Chi tiết Sách</h2>
+    <p><strong>Tiêu đề:</strong> {{ book.title }}</p>
+    <p><strong>Tác giả:</strong> {{ book.author }}</p>
+    <p><strong>Giá:</strong> {{ book.price }} VND</p>
+    <p><strong>Mô tả:</strong> {{ book.description }}</p>
+    
+    {% if book.photo %}
+        <img src="{{ book.photo.url }}" alt="{{ book.title }}" width="300">
+    {% else %}
+        <p>No image available</p>
+    {% endif %}
+    <p>
+        <a href="{% url 'book_list' %}">Quay lại danh sách sách</a>
+    </p>
+</body>
+</html>
