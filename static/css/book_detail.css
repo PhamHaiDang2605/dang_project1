@@ -7,7 +7,7 @@ body {
 
 /* Tiêu đề trang book detail */
 h2 {
-    color: #01579b;
+    color: #519b01;
     font-size: 2em;
     text-align: center;
 }
@@ -16,7 +16,7 @@ h2 {
 .book-details {
     margin: 20px;
     padding: 20px;
-    border: 1px solid #01579b;
+    border: 1px solid #9b0141;
     border-radius: 8px;
     background-color: #ffffff;
 }
@@ -34,14 +34,14 @@ h2 {
 .book-image img {
     max-width: 80%;
     height: auto;
-    border: 5px solid #01579b;
+    border: 5px solid #9b012f;
     border-radius: 8px;
 }
 
 /* Nút quay lại danh sách sách */
 a {
     display: inline-block;
-    background-color: #01579b;
+    background-color: #ba1258;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
